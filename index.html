@@ -186,27 +186,55 @@
 						
 						
 					</div>
-					<div class="'coursescontainer">
-						<button class="courseBtn" id="fyc" variant="primary"><a href="firstyear.html" target="_self">
+					<div >
+						<button type="submit" onclick ="openPopup()" class = "button">Courses</button>
+						<div class="popup" id="popup">
+							<div class="Scroll">
+								<div class="pfont">
+									<center><h2>1st Year</h2></center>
+									CSCA08: Introduction to Computer Science I (Python)<br>
+								    CSCA48: Introduction to Computer Science II (C)<br>
+								    STAB52: Introduction to Probability<br>
+								    MATA31: Calculus for Mathematical Sciences I<br>
+								    MATA37: Calculus for Mathematical Sciences II<br>
+								    CSCA67: Discrete Mathematics<br>
+								    MATA22: Linear Algebra I<br>
+								    MGEA02: Introduction to Microeconomics<br>
+								    MGEA06: Introduction to Macroeconomics<br>
 
-
-							1st Year Courses
-						</a>
-						</button>
-						<button class="courseBtn" id="fyc" variant="primary">
-						    2nd Year Courses
-						</button>
-						<button class="courseBtn" id="fyc" variant="primary">
-							3rd Year Courses
-						</button>
+									<br>
+									
+									<center><h2>2nd Year</h2></center>
+									STAA57: Introduction to Data Science <br>
+									STAB57: Introduction to Statistics <br>
+									MATB41: Mutivariable Calculus I (Calculus III) <br>
+									MGEB02: Price Theory (Microeconomics II) <br>
+									MGEB12: Quantitative Methods in Economics II (Applied Econometrics II) <br>
+									MGEC02: Topics in Price Theory (Microeconomics III)
+								</div>
+							
+							</div>
+							<button type="btn" onclick = "closePopup()">Ok</button>					
+						</div>
 					</div>
-					<footer>
+					<div>
 						<a href="https://drive.google.com/file/d/1KeRvUKD_XJvLE4jMJLjrdENuEpYFGCT7/view?usp=sharing" class="button large scrolly">Resume</a>
-					</footer>
+					</div>				
 				</div>
 			</article>
 
-				
+			<script>
+				let popup= document.getElementById("popup");
+
+				function openPopup(){
+					popup.classList.add("open-popup");
+
+				}
+
+				function closePopup(){
+					popup.classList.remove("open-popup");
+				}
+			</script>	
 
 
 		<!-- Contact -->
