@@ -1686,10 +1686,11 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		background-color: #282828;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
+		margin-bottom: 10px
 	}
 
 		input[type="button"]:hover,
@@ -1697,7 +1698,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #43bff0;
+			background-color: #282828;
 			color: #fff !important;
 		}
 
@@ -1706,7 +1707,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #3BA8D3;
+			background-color: #282828;
 			top: 1px;
 		}
 
@@ -1744,6 +1745,67 @@ input, select, textarea {
 			.button.alt:active {
 				background-color: #3f3f3f;
 			}
+	.btn{
+		padding: 10px 60px;
+		background: #fff;
+		border: 0;
+		outline: none;
+		cursor: pointer;
+		font-size: 22px;
+		font-weight: 500;
+		border-radius: 30px;
+		color: black;
+
+	}
+
+	.popup{
+		width: 600px;
+		background: #fff;
+		border-radius: 6px;
+		position: relative;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0.1);
+		padding: 0 30px 30px;
+		color: #181818;
+		visibility: hidden;
+		transition: transform 0.4s, top 0.4s;
+		z-index: 1;
+
+	}
+
+	.open-popup{
+		visibility:visible;
+		top: 50%;
+		transform: translate(-50%,-50%) scale(1);
+	}
+
+	.Scroll{
+		background-color: #fff;
+        width: 570px;
+        height: 400px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+	}
+
+	.pfont{
+		text-align: left;
+	}
+
+	.button-container {
+		display: flex;
+		justify-content: center;
+	  }
+
+	.action_btn {
+		width: 200px;
+		margin: 0 auto;
+		display: inline;}
+	  
+
+
 
 /* List */
 
