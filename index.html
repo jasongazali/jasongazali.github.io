@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Miniport by HTML5 UP</title>
+		<title>Jason Richard Personal Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -21,7 +21,7 @@
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#school">School</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="https://github.com/jasongazali?tab=repositories">Resume</a></li>
+					<li><a href="https://drive.google.com/file/d/1KeRvUKD_XJvLE4jMJLjrdENuEpYFGCT7/view?usp=sharing">Resume</a></li>
 				</ul>
 			</nav>
 
@@ -30,14 +30,21 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images\IMG_9630.jpg" alt="" /></span>
+							<span class="image rounded"><img src="images\IMG_96301.jpg" alt="" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
 								<h1>Hey. I'm <b>Jason Richard</b>.</h1>
 							</header>
+							<hr />
 							<p>Empowering Decision-Making Through Data Science</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
+							<ul class="social">								
+								<li><a href="https://www.linkedin.com/in/jason-richardg/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:jason.richard@mail.utoronto.ca" class="icon fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://github.com/jasongazali?tab=repositories" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="tel:+6478692635" class="fas fa-phone-alt"><span class="label"></span></a></li>
+							</ul>
+							<hr />
 						</div>
 					</div>
 				</div>
@@ -61,6 +68,7 @@
 							needed to tackle complex problems and uncover meaningful insights from data. I'm excited to continue exploring 
 							the world of data science and applying my skills to real-world problems.
 						</p>
+						<!--
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon featured fa-comments"></span>
@@ -84,10 +92,18 @@
 						</div>
 						
 					</div>
+					    -->
+
+						<!--
 					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						
+							<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+													
 						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+					
+
 					</footer>
+					-->
 				</div>
 			</article>
 
@@ -101,18 +117,17 @@
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="https://github.com/jasongazali/IBM-Data-Science-Project" class="image featured"><img src="images\Python_Project_for_Data_Science.png" alt="" /></a>
 								<h3><a href="https://github.com/jasongazali/IBM-Data-Science-Project">IBM Data Science Project</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<a href="https://github.com/jasongazali/Car-Manufacturing-Duplicates" class="image featured"><img src="images\automotive-crm-software-definitive-guide-min-1200x800.png" alt="" /></a>
 								<h3><a href="https://github.com/jasongazali/Car-Manufacturing-Duplicates">Car Manufacturing Duplicates</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
+						<!--
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
@@ -142,9 +157,10 @@
 							</article>
 						</div>
 					</div>
-					<footer>
+						<footer class ="text-center">
 						<a href="#school" class="button large scrolly">Relevant University Courses</a>
 					</footer>
+				-->
 				</div>
 			</article>
 		
@@ -155,7 +171,9 @@
 						<h2>School</h2>
 					</header>
 					<div class="row aln-center">
-						<img src = "images\uoft_logo.png" width ='600' height ='500'>
+						<img src = "images\uoft_logo1.png" width = "300" height = "150">
+						<br>
+						<br>
 						<p class ='lead'>
                             <b>Honours BSc in Statistics and Economics</b>
 							<br>
@@ -168,27 +186,90 @@
 						
 						
 					</div>
-					<div class="'coursescontainer">
-						<button class="courseBtn" id="fyc" variant="primary"><a href="firstyear.html" target="_self">
+					<div  >
+						<button type="submit" onclick ="openPopup()" class = "button">1st year Courses</button>
+						<button type="submit" onclick ="openPopup2()" class = "button">2nd year Courses</button>
+
+						<div class="popup" id="popup" hidden>
+							<div class="Scroll" >
+								 <div class="pfont">
+									<center><h2>1st Year</h2></center>
+									CSCA08: Introduction to Computer Science I (Python)<br>
+								    CSCA48: Introduction to Computer Science II (C)<br>
+								    STAB52: Introduction to Probability<br>
+								    MATA31: Calculus for Mathematical Sciences I<br>
+								    MATA37: Calculus for Mathematical Sciences II<br>
+								    CSCA67: Discrete Mathematics<br>
+								    MATA22: Linear Algebra I<br>
+								    MGEA02: Introduction to Microeconomics<br>
+								    MGEA06: Introduction to Macroeconomics<br>
+
+								
+								</div> 
+							
+							</div>
+							<button type="btn" onclick = "closePopup()">Ok</button>					
+						</div>
+
+						<div class="popup2" id="popup2" hidden>
+							<div class="Scroll" >
+								 <div class="pfont">
+								
+									<center><h2>2nd Year</h2></center>
+									STAA57: Introduction to Data Science <br>
+									STAB57: Introduction to Statistics <br>
+									MATB41: Mutivariable Calculus I (Calculus III) <br>
+									MGEB02: Price Theory (Microeconomics II) <br>
+									MGEB12: Quantitative Methods in Economics II (Applied Econometrics II) <br>
+									MGEC02: Topics in Price Theory (Microeconomics III)
+								</div> 
+							
+							</div>
+							<button type="btn" onclick = "closePopup2()">Ok</button>					
+						</div>
 
 
-							1st Year Courses
-						</a>
-						</button>
-						<button class="courseBtn" id="fyc" variant="primary">
-						    2nd Year Courses
-						</button>
-						<button class="courseBtn" id="fyc" variant="primary">
-							3rd Year Courses
-						</button>
+
 					</div>
 					<footer>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
+						<a href="https://drive.google.com/file/d/1KeRvUKD_XJvLE4jMJLjrdENuEpYFGCT7/view?usp=sharing" class="button large scrolly">Resume</a>
+					</footer>				
 				</div>
 			</article>
 
+			<script>
+				let popup= document.getElementById("popup");
+
+				function openPopup(){
+					document.getElementById("popup").hidden = false;
 				
+					popup.classList.add("open-popup");
+					
+
+				}
+
+				function closePopup(){
+					popup.classList.remove("open-popup");
+					document.getElementById("popup").hidden = true;
+				
+				
+				}
+
+				function openPopup2(){
+					document.getElementById("popup2").hidden = false;
+				
+					//popup.classList.add("open-popup2");
+					
+
+				}
+
+				function closePopup2(){
+					//popup.classList.remove("open-popup2");
+					document.getElementById("popup2").hidden = true;
+				
+				
+				}
+			</script>	
 
 
 		<!-- Contact -->
@@ -198,38 +279,15 @@
 						<h2>Contact</h2>
 						<p>I'd be happy to connect with you</p>
 					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
+					
 						<div class="col-12">
 							<hr />
-							<h3>Find me on ...</h3>
+							
 							<ul class="social">								
 								<li><a href="https://www.linkedin.com/in/jason-richardg/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="mailto:jason.richard@mail.utoronto.ca" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								<li><a href="https://github.com/jasongazali?tab=repositories" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="tel:+6478692635" class="fas fa-phone-alt"><span class="label"></span></a></li>
 								<!--
 								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
 								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
