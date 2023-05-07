@@ -186,11 +186,13 @@
 						
 						
 					</div>
-					<div >
-						<button type="submit" onclick ="openPopup()" class = "button">Courses</button>
-						<div class="popup" id="popup">
-							<div class="Scroll">
-								<div class="pfont">
+					<div  >
+						<button type="submit" onclick ="openPopup()" class = "button">1st year Courses</button>
+						<button type="submit" onclick ="openPopup2()" class = "button">2nd year Courses</button>
+
+						<div class="popup" id="popup" hidden>
+							<div class="Scroll" >
+								 <div class="pfont">
 									<center><h2>1st Year</h2></center>
 									CSCA08: Introduction to Computer Science I (Python)<br>
 								    CSCA48: Introduction to Computer Science II (C)<br>
@@ -202,8 +204,17 @@
 								    MGEA02: Introduction to Microeconomics<br>
 								    MGEA06: Introduction to Macroeconomics<br>
 
-									<br>
-									
+								
+								</div> 
+							
+							</div>
+							<button type="btn" onclick = "closePopup()">Ok</button>					
+						</div>
+
+						<div class="popup2" id="popup2" hidden>
+							<div class="Scroll" >
+								 <div class="pfont">
+								
 									<center><h2>2nd Year</h2></center>
 									STAA57: Introduction to Data Science <br>
 									STAB57: Introduction to Statistics <br>
@@ -211,15 +222,18 @@
 									MGEB02: Price Theory (Microeconomics II) <br>
 									MGEB12: Quantitative Methods in Economics II (Applied Econometrics II) <br>
 									MGEC02: Topics in Price Theory (Microeconomics III)
-								</div>
+								</div> 
 							
 							</div>
-							<button type="btn" onclick = "closePopup()">Ok</button>					
+							<button type="btn" onclick = "closePopup2()">Ok</button>					
 						</div>
+
+
+
 					</div>
-					<div>
+					<footer>
 						<a href="https://drive.google.com/file/d/1KeRvUKD_XJvLE4jMJLjrdENuEpYFGCT7/view?usp=sharing" class="button large scrolly">Resume</a>
-					</div>				
+					</footer>				
 				</div>
 			</article>
 
@@ -227,12 +241,33 @@
 				let popup= document.getElementById("popup");
 
 				function openPopup(){
+					document.getElementById("popup").hidden = false;
+				
 					popup.classList.add("open-popup");
+					
 
 				}
 
 				function closePopup(){
 					popup.classList.remove("open-popup");
+					document.getElementById("popup").hidden = true;
+				
+				
+				}
+
+				function openPopup2(){
+					document.getElementById("popup2").hidden = false;
+				
+					//popup.classList.add("open-popup2");
+					
+
+				}
+
+				function closePopup2(){
+					//popup.classList.remove("open-popup2");
+					document.getElementById("popup2").hidden = true;
+				
+				
 				}
 			</script>	
 
